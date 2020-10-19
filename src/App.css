@@ -1,0 +1,385 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/*-----------------------------------------------General Section-----------------------------------------------*/
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: 95%;
+  max-width: 1400px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body{
+  font-size: 2rem;
+  background: #eee;
+  color:white;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+header{
+  background: #f5ba13;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding:20px 0;
+}
+main{
+  min-height: 80vh;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+input,
+textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+}
+h2,
+p{
+  word-break: break-word;
+}
+h2{
+  font-size: 3rem;
+  color:#232b2b;
+}
+p{
+  font-size: 1.75rem;
+  color:#353839;
+}
+h3{
+  font-style: italic;
+  font-size: 2rem;
+  color:#232b2b;
+}
+h1{
+  font-size:3rem;
+  padding:10px;
+  font-family: "McLaren", cursive;
+}
+a:focus,
+a:hover{
+  background:#a98600;
+  padding:2px;
+}
+button{
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color:#a98600;
+  color:white;
+  border:1px solid #a98600;
+}
+.diable{
+  background-color:grey;
+}
+button:hover,
+button:focus,
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover
+{
+  background:#fff9ae;
+}
+/*-----------------------------------------------NavBar Section-----------------------------------------------*/
+.navBar{
+  display:flex;
+  justify-content: space-between;
+}
+.navItem li{
+  float:left;
+  padding:10px 12px;;
+}
+.navItem a:focus,
+.navItem a:hover{
+  background:#a98600;
+  padding:2px;
+}
+/*-----------------------------------------------Display All Note Section-----------------------------------------------*/
+.homePageDiaryContent{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  margin:20px auto;
+}
+.homePage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.quoteContainer{
+  flex:1 1 15%;
+  order:2;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 300px;
+  margin:16px 10px;
+}
+.noteTitle{
+  box-shadow: 0 2px 5px #FFFF99;
+  padding:5px;
+  color:#232b2b;
+  font-size: 1.85rem;
+}
+.noteTitle h2{
+  font-size: 1.9rem;
+}
+.noteTitle h3{
+  font-size: 1.35rem;
+}
+.noteContent{
+  padding:10px;
+  display:flex;
+}
+.noteContent p{
+  flex-basis: 90%;
+  font-size: 1.5rem;
+}
+.noteContentButton{
+  flex-basis: 10%;
+}
+.noteContentButton button {
+  color: #f5ba13;
+  background: #fff;
+  border:none;
+}
+.noteContentButton button:first-child{
+  margin-bottom: 5px;
+}
+.noteContentButton button:hover,
+.noteContentButton button:focus{
+  background:#fff9ae;
+}
+/*-------------------------------------------------Filter Section---------------------------------------------*/
+.homePageFilterFormContainer{
+  margin:20px 10px;
+}
+.dateFilterForm{
+  display:flex;
+  background: #3302;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 15px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.filterOptionContainer{
+  display:flex;
+  flex-basis: 70%;
+}
+.filterOptionContainer select{
+  background-color:#fff;
+  padding:5px 10px;
+  margin-left:15px;
+  border:1px solid #a98600;
+}
+select:focus,
+select:hover
+{
+  background:#fff9ae;
+}
+.filterButtonContainer{
+  display:flex;
+}
+.filterButtonContainer button{
+  padding:5px 20px;
+  margin-left:10px;
+}
+/*----------------------------------------------------------expand  section ---------------------------------*/
+.expandNoteContainer{
+  background: #fff;
+  display:flex;
+  flex-direction: column;
+  width:70%;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  margin:30px auto;
+}
+.expandNoteeHeader{
+  display:flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px #FFFF99;
+  padding:20px 10px;
+  margin-bottom: 15px;
+}
+.expandNoteeHeader h2{
+  flex-basis: 80%;
+}
+.expandNoteeHeader h3{
+  flex-basis: 20%;
+}
+.expandNoteContent{
+  margin:15px 0 20px;
+  max-height: 60vh;
+  overflow: scroll;
+}
+.expandNoteContent p{
+  white-space: pre-wrap; 
+}
+/*--------------------------------------Prev and Next Button(NavButton section)-----------------------------------*/
+.navButtonContainer{
+  display:flex;
+  justify-content: center;
+  margin:10px auto;
+}
+.navBtn{
+  flex-basis:20%;
+  padding:10px;
+  margin:0 10px;
+  border-radius: 10%;
+}
+
+/*------------------------------------------------------Compose section------------------------------------------*/
+.createNote {
+  background: #fff;
+  width:65%;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  margin:30px auto;
+}
+.noteTitleHeader{
+  display:flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px #FFFF99;
+  padding:20px 10px;
+  margin-bottom: 15px;
+}
+.noteTitleHeader input[type="text"]{
+  flex-basis: 80%;
+  font-size: 2.5rem;
+}
+.noteTitleHeader input[type="date"]{
+  flex-basis: 20%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  font-size: 1.75rem;
+}
+.noteTextArea{
+  height: 50vh;
+}
+.noteTextArea textarea{
+  height:100%;
+  font-size:1.75rem;
+}
+.noteComposeButton{
+  text-align: center;
+}
+.noteComposeButton button {
+  color: #f5ba13;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 4rem;
+  background:#fff;
+  border-radius: 50%;
+  margin:0 10px;
+}
+
+.noteComposeButton button:hover,
+.noteComposeButton button:focus{
+  color:#fff9ae;
+}
+/*-----------------------------------------------Footer Section--------------------------------------------------*/
+footer {
+  text-align: center;
+  width: 100%;
+  margin-top:10px;
+}
+
+footer p {
+  padding-bottom:20px;
+}
+
+/*--------------------------------------------Media Quries----------------------------------------------------*/
+@media (max-width: 1050px){
+  .createNote,
+  .expandNoteContainer{
+    width:85%
+  }
+}
+@media (max-width: 740px){
+  .wrapper{
+    width:95%;
+  }
+  .createNote,
+  .expandNoteContainer{
+    width:100%
+  }
+  .filterOptionContainer select{
+    padding:5px 5px;
+    margin-left:10px;
+  }
+  .filterButtonContainer button{
+    padding:5px 10px;
+    margin-left:10px;
+  }
+  .noteTitleHeader input[type="text"],
+  h2{
+    font-size: 2rem;
+  }
+  .noteTitleHeader input[type="date"],
+  h3{
+    font-size: 1.20rem;
+  }
+  textarea,
+  p{
+    font-size: 1.5rem;
+  }  
+}
+@media (max-width: 610px){
+  h1{
+    font-size: 2.5rem;
+  }
+  a{
+    font-size: 1.8rem;
+  }
+  .dateFilterForm{
+    justify-content: center;
+  }
+  .filterOptionContainer{
+    flex-basis: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 450px){
+  .noteTitleHeader input[type="text"]{
+    flex-basis: 100%;
+    font-size: 1.8rem;
+  }
+  .noteTitleHeader input[type="date"]{
+    flex-basis: 100%;
+  }
+  textarea{
+    font-size: 1.5rem;
+  }
+  h1{
+    font-size: 2.25rem;
+    padding:5px;
+  }
+  a{
+    font-size: 1.6rem;
+  }
+  .navItem li{
+    padding:10px 10px;
+  }
+}
